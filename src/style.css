@@ -4,10 +4,11 @@
     padding: 0;
     box-sizing: border-box;   
 }
-
+ /*PAGINA INICIAL FORMATO CELULAR*/
 body{
     font-family: sans-serif;
     background: black;
+    box-sizing: content-box;
 }
 
 /*main {
@@ -24,7 +25,7 @@ body{
 
 header{
     width: 100%;
-    height: 50px;
+    height: 55px;
     background: linear-gradient(0deg, #EA2222, #EA2222);
     color: #fff;
     position: fixed;
@@ -67,7 +68,6 @@ header label{
 
 }
 .menu{
-
     position: absolute;
     background: linear-gradient(0deg, #EA2222, #EA2222);
     box-sizing: border-box;
@@ -88,6 +88,10 @@ a:link{
     text-decoration:none;
 
 }
+li a {
+    margin-top: 30px;
+
+}
 
 a{
     color:white;
@@ -96,15 +100,14 @@ a{
 .menu li {
     display: block;
     color: white;
-    height: 50px;
+    height: 35px;
     text-decoration: none;
-    padding: 15px;
+    padding: 18px;
     border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .submenu{
-    margin-top:17px;
-    margin-left: -15px;
+    margin-left: -18px;
     position: absolute;
     visibility: hidden;
     width: 100%;
@@ -113,7 +116,6 @@ a{
 }
 
 .submenu li{
-
     display: block;
     padding: 5px;
     background: linear-gradient(0deg, #EA2222, #EA2222);
@@ -124,8 +126,6 @@ a{
     opacity: 1;
 
 }
-
-
 .menu li:hover{
     background: rgba(63, 63, 63, 1) ;
 }
@@ -133,29 +133,32 @@ a{
     transform: translateX(0%);
 
 }
- section{
+ /*section{
      width: 100%;
      margin-bottom: 25px;
- }
+ }*/
  
  #banner{
-     margin-top: 50px;  
-
+     margin-top:50px;  
  }
+
+ #rootFather{
+    display: flex;
+    flex-direction: column;  
+    padding-bottom: 20%;
+}
 
  #root{
      display: flex;
-     box-sizing: content-box;
      flex-direction: column;
-     width: 100%;
-     margin: auto;
-     padding: 0px;
+     padding-top: 10%;
+     padding-bottom: 10%;   
  }
 
+/*permite que la imagen se ajuste en la version movil*/
 img{
     width: 100%;
-    height: 100%;
-   
+    height: 100%; 
 }
 
 /*#banner img{
@@ -172,9 +175,8 @@ img{
 
 
 #text1InitialPage{
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin:auto;
+    margin-bottom: 10%;
     text-align: center;
     width: 90%;
     height: 90%;
@@ -186,7 +188,6 @@ img{
     font-weight: bold;
     font-size: 19px;
     line-height: 28px;
-    display: flex;
     align-items: center;
     text-align: center;
     color: #FFF9F9;
@@ -194,7 +195,7 @@ img{
 }
 
 #text2InitialPage{
-    margin:0 auto;
+    margin:auto;
     justify-content: center;
     width: 90%;
     height: 90%;
@@ -206,7 +207,6 @@ img{
     font-weight: bold;
     font-size: 19px;
     line-height: 28px;
-    display: flex;
     align-items: center;
     text-align: center;
     color: #FFF9F9;
@@ -214,10 +214,10 @@ img{
 }
 
 footer{
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top:10%;
-    margin-bottom:0%;
+
+    margin:auto;
+    margin-top: 10%;
+    justify-content: center;
     width: 95%;
     height: 95%;
     background: rgba(81, 80, 80, 0.85);
@@ -230,9 +230,15 @@ footer{
     line-height: 21px;
     text-align: center;
     color: #FFF8F8;
-}
+    
+/*PAGINA TIPO FORMATO DESKTOP*/
 
-@media (min-width: 600px) {
+
+
+
+}
+ /*PAGINA INICIAL FORMATO DESKTOP*/
+@media (min-width: 1040px) {
     
     .menu{
         display: flex;
@@ -242,20 +248,32 @@ footer{
         transform: translateX(0%);
     }
 
+
+    .menu li{
+        border-bottom: hidden;
+        height: 1%;
+        
+    }
+
+    .menu li:hover.submenu{
+        visibility: visible;
+        opacity:1;
+        background: rgba(63, 63, 63, 1) ;
+
+    }
     .submenu{
-        margin-top:16px;
-        margin-left: -15px;
+        margin-top: 18px;
+        margin-left: -18px;
         position: absolute;
         visibility: hidden;
         width: 30%;
         opacity: 0;
         transition: opacity 1.05s;
         
-
     }
     .submenu li{
         display: block;
-        padding: 5px;
+        padding: 10px;
         background: linear-gradient(0deg, #EA2222, #EA2222);
 
     }
@@ -263,32 +281,44 @@ footer{
         display:none;
     }
 
-    #root{
-        box-sizing: content-box;
+    #rootFather{
         display: flex;
-        justify-content: flex-end;
-        background-image: url(imagen-inicial.jpg);
-        background-size: cover;
+        background-image:url(imagen-inicial.jpg) ;
+        background-position: center center;
         background-repeat: no-repeat;
-        margin-top:40px ;
-        padding:15%;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-bottom: 20%;
     }
 
-    footer{
-        background: rgba(9, 8, 8, 0.42);
-        width: 90%;
-        
+    #root{
+        display: flex;
+        flex-direction: row;
+        padding:13%;
+    }
 
-   }
     
    #text1InitialPage{
+        margin-top: 0%;
+        margin-left: -13%;
         background: rgba(0, 0, 0,.6);
-        width: 50%;
+        width: 40%;
         
     }
     #text2InitialPage{
+        margin-top: 0%;
+        margin-right: -13%;
         background: rgba(0, 0, 0,.6);
-        width: 50%;
+        width: 40%;
     }
- 
+
+    footer{
+        margin-top: 15%;
+        background: rgba(9, 8, 8, 0.42);
+    
+   }
+  /*PAGINA TIPO FORMATO DESKTOP*/
+
+
+
 }
