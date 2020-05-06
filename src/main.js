@@ -78,19 +78,84 @@ rootFather.innerHTML+=`<section id="banner">
 
 
 
-let type = document.getElementsByClassName('type');
+let type = document.getElementsByClassName('type');//recorre los checkbox
 document.getElementById('types').addEventListener('change', () => {
    for (let i = 0; i < type.length; i++) {
      if (type[i].checked === true) {
-       let type_pokemon= type[i].value;                          //console.log(type_pokemon); memuestra el value de lo que selecciono el usuario en el menu
+       let type_pokemon= type[i].value;  //console.log(type_pokemon); memuestra el value de lo que selecciono el usuario en el menu
+       const textOne = document.querySelector('#text1InitialPage'); // creo una variable para seleccionar el id            
+       textOne.textContent = '';                                    //modifico el texto del contenedor que lo quiero vacio
+       const textTwo = document.querySelector('#text2InitialPage');              
+       textTwo .textContent = '';
+       rootFather.setAttribute('style','background-image:url(pasto.jpg)');
        let array_type=[];
        switch(type_pokemon){
          case 'Water':
            array_type=filterType(data,'Water'); //let names = array_type.map(title => title.name);//console.log(names);me imprime todos los nombres
-           let names = array_type.map(title => title.name);
-           console.log(names);
+           console.log(array_type);
          break;                               //console.log(imagen);                                      
-      
+         case 'Bug':
+          array_type=filterType(data,'Bug');
+          console.log(array_type);
+        break; 
+        case 'Dragon':
+          array_type=filterType(data,'Dragon');
+          console.log(array_type);
+        break; 
+        case 'Electric':
+          array_type=filterType(data,'Electric');
+          console.log(array_type);
+        break; 
+        case 'Ghost':
+          array_type=filterType(data,'Ghost');
+          console.log(array_type);
+        break; 
+        case 'Fire':
+          array_type=filterType(data,'Fire');
+          console.log(array_type);
+        break; 
+        case 'Ice':
+          array_type=filterType(data,'Ice');
+          console.log(array_type);
+        break; 
+        case 'Fighting':
+          array_type=filterType(data,'Fighting');
+          console.log(array_type);
+        break; 
+        case 'Normal':
+          array_type=filterType(data,'Normal');
+          console.log(array_type);
+        break; 
+        case 'Grass':
+          array_type=filterType(data,'Grass');
+          console.log(array_type);
+        break; 
+        case 'Psychic':
+          array_type=filterType(data,'Psychic');
+          console.log(array_type);
+        break; 
+        case 'Rock':
+          array_type=filterType(data,'Rock');
+          console.log(array_type);
+        break; 
+        case 'Ground':
+          array_type=filterType(data,'Ground');
+          console.log(array_type);
+        break; 
+        case 'Rock"':
+          array_type=filterType(data,'Rock"');
+          console.log(array_type);
+        break; 
+        case 'Poison':
+          array_type=filterType(data,'Poison');
+          console.log(array_type);
+        break; 
+        case 'Flying':
+          array_type=filterType(data,'Flying');
+          console.log(array_type);
+        break;
+        default:
+        break; 
         }
       }
     }
