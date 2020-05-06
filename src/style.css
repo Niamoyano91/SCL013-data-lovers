@@ -283,7 +283,7 @@ footer{
 
     #rootFather{
         display: flex;
-        background-image:url(imagen-inicial.jpg) ;
+        background-image:url(img/imagen-inicial.jpg) ;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
