@@ -2,30 +2,6 @@ import pokemonData from './data/pokemon/pokemon.js';
 import { filterType, filterWeakness, orderAlphabetically1, orderAlphabetically2, orderNumber1, orderNumber2 } from './data.js';
 
 let data = pokemonData.pokemon;
-//console.log(data[0].type);
-
-//data.forEach(objeto =>{ //imprime todos los objetos de la data
-// console.log(objeto);
-//});
-
-//data.forEach(objeto =>{
-// console.log(objeto.type);//imprime todos los tipos de pokemon
-// });
-
-//let pokemon= data.filter(objeto => objeto.name === "Bulbasaur");
-//console.log(pokemon); busca los objetos y me muestra l que tiene el nombre Bulbasaur
-
-
-//const array = [];
-//data.forEach(objeto =>{
-//const typesPokemon = (objeto.type);//imprime todos los tipos de elementos de pokemon
-//typesPokemon.forEach(seeType =>{
-//if(seeType==="Water"){
-//array.push(objeto);//console.log(array);// imprime todos los pokemones tipo agua
-//console.log(array);
-// }
-// })
-//});
 
 const rootFather = document.getElementById('rootFather');
 rootFather.innerHTML +=   `<section id="banner">
@@ -47,25 +23,7 @@ rootFather.innerHTML +=   `<section id="banner">
 </footer>`
 
 
-// let typePokemon=document.getElementById('water');
-// typePokemon.addEventListener('change', ()=>{
-// const x=document.getElementById('water').value= 'water';// meda un on
-//   console.log(x);
-// const y=document.getElementById('bug').value= 'bug';
-// console.log(y);
-//   //const name= document.getElementsByName('Water')[0].name; //me da el nombre 
-//   //console.log(name);
 
-// });
-
-//console.log(document.getElementsByClassName('type'));
-
-
-//const showPokemon = (fullObject) => {
-//const rootFather= document.getElementById('rootFather');
-// rootFather.innerHTML+=
-
-//};
 
 const cards = (array) => {
   const listPokemons = document.getElementById('rootPokemonList');

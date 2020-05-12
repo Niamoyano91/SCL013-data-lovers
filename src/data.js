@@ -1,24 +1,3 @@
-// estas funciones son de ejemplo
-
-//export const example = () => {
-  //return 'example';
-//};
-
-//export const anotherExample = () => {
- /// return 'OMG';
-//};
-
-/*document.getElementById("btnabrir").addEventListener("click",function(){
-  document.getElementsByClassName("fondo_transparente")[0].style.display="block" 
-  return false
-})
-document.getElementsByClassName("modal_cerrar")[0].addEventListener("click",function(){
-   document.getElementsByClassName("fondo_transparente")[0].style.display="none" 
-})*/
-
-
-
-
 
 export const filterType=(data, value)=>{
   const array = [];
@@ -33,15 +12,7 @@ export const filterType=(data, value)=>{
   return array;
 };
 
-/*export const filterWeakness=(data, value)=>{
-  const array = [];
-  const arrayWeaknesses= data.filter(object=>object.weaknesses)
-  arrayWeaknesses.forEach(seeWeaknesses =>{
-    if(seeWeaknesses === value){
-      array.push(arrayWeaknesses);
-    };
-  })
-};*/
+
 
 export const filterWeakness=(data, value)=>{
   const array = [];
