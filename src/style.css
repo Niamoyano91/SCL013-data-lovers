@@ -22,10 +22,9 @@ body{
 }*/
 
 
-
 header{
     width: 100%;
-    height: 55px;
+    height: 55px;/*ancho barra menu*/
     background: linear-gradient(0deg, #EA2222, #EA2222);
     color: #fff;
     position: fixed;
@@ -45,6 +44,7 @@ h1 {
 input{
     font-weight: bold;
     font-size: 15px;
+    margin-right: 30px;
 }
  
 #menu-bar{
@@ -59,30 +59,55 @@ input{
 #debilidad{
     display: none;
 }
+.type{
+    display: none;
+}
+
+.icons{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-top: -11px;
+}
+p{
+    margin-left: 50px;
+}
+.weaknesses{
+    display: none;
+}
+.order{
+    display: none;
+}
 
 header label{
     float: left;
     font-size: 28px;
-    margin:6px 0;
+    margin:10px 15px;
     cursor: pointer;
-
 }
+
 .menu{
     position: absolute;
     background: linear-gradient(0deg, #EA2222, #EA2222);
     box-sizing: border-box;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100vh;
     /*background: rgba(51, 51, 51, 0.9);*/
-    transition: all 0.5s;
+    transition: all 0.8s;
     transform: translateX(-100%);
 }
 
-header.contenedor{
+header.container{
     display: table;
 }
+
+.icon{
+    height: 30px;
+    width: 30px;
+}
+
 
 a:link{
     text-decoration:none;
@@ -90,6 +115,7 @@ a:link{
 }
 li a {
     margin-top: 30px;
+
 
 }
 
@@ -114,18 +140,55 @@ a{
     opacity: 0;
     transition: opacity 1.05s;
 }
+.submenu2{
+    margin-left: -18px;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.05s;
 
+}
+.submenu3{
+    margin-left: -18px;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.05s;
+}
 .submenu li{
     display: block;
     padding: 5px;
     background: linear-gradient(0deg, #EA2222, #EA2222);
-
 }
+.submenu2 li{
+    display: block;
+    padding: 5px;
+    background: linear-gradient(0deg, #EA2222, #EA2222);
+}
+.submenu3 li{
+    display: block;
+    padding: 5px;
+    background: linear-gradient(0deg, #EA2222, #EA2222);
+}
+
+
+
 .menu li:hover .submenu{
     visibility: visible;
     opacity: 1;
-
 }
+
+.menu li:hover .submenu2{
+    visibility: visible;
+    opacity: 1;
+}
+.menu li:hover .submenu3{
+    visibility: visible;
+    opacity: 1;
+}
+
 .menu li:hover{
     background: rgba(63, 63, 63, 1) ;
 }
@@ -133,6 +196,17 @@ a{
     transform: translateX(0%);
 
 }
+
+/*se supone que desaparece el menu al apretar pero no esta funcionando
+*/
+#water:checked ~.menu{
+    transform: translateX(0%);
+
+}
+
+
+
+
  /*section{
      width: 100%;
      margin-bottom: 25px;
@@ -156,7 +230,8 @@ a{
  }
 
 /*permite que la imagen se ajuste en la version movil*/
-img{
+.inicialImg{
+    margin-top: -15px;
     width: 100%;
     height: 100%; 
 }
@@ -230,13 +305,82 @@ footer{
     line-height: 21px;
     text-align: center;
     color: #FFF8F8;
-    
-/*PAGINA TIPO FORMATO DESKTOP*/
-
-
-
-
 }
+    
+/*PAGINA TIPO FORMATO PHONE*/
+
+
+
+#rootPokemon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 20px;/*margen top de cuadrado semitransparente negro*/
+
+  }
+
+
+
+
+  .boxPokemon{ /* propiedades de porte y margen de caja negra semitransparente*/
+    margin:40px 40px 40px 40px;
+    border-radius: 30px;
+    width: 240px;
+    height: 240px;
+    right: 50px;
+  
+  }
+
+  .titlePokemon{
+    font-family: Arial Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;  
+    color: #FFFDFD;
+
+  }
+  
+  .picturePokemon{
+    width: 170px;
+    height: 170px;
+    margin-top: -20px;/*Mover solo el mono*/
+    
+  }
+  
+  .flip-conteiner {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.6);
+    border-radius: 30px;
+  }
+
+  .page{
+    background: url(img/foto.jpg) center;
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+
  /*PAGINA INICIAL FORMATO DESKTOP*/
 @media (min-width: 1040px) {
     
@@ -271,6 +415,38 @@ footer{
         transition: opacity 1.05s;
         
     }
+
+    .submenu2{
+        margin-top: 18px;
+        margin-left: -18px;
+        position: absolute;
+        visibility: hidden;
+        width: 30%;
+        opacity: 0;
+        transition: opacity 1.05s;
+        
+    }
+    .submenu3{
+        margin-top: 18px;
+        margin-left: -18px;
+        position: absolute;
+        visibility: hidden;
+        width: 30%;
+        opacity: 0;
+        transition: opacity 1.05s;
+        
+    }
+    .submenu3 li{
+        display: block;
+        padding: 10px;
+        background: linear-gradient(0deg, #EA2222, #EA2222);
+    }
+
+    .submenu2 li{
+        display: block;
+        padding: 10px;
+        background: linear-gradient(0deg, #EA2222, #EA2222);
+    }
     .submenu li{
         display: block;
         padding: 10px;
@@ -281,14 +457,18 @@ footer{
         display:none;
     }
 
+    .inicialImg{
+        display: none;
+    }
+
     #rootFather{
         display: flex;
-        background-image:url(img/imagen-inicial.jpg) ;
+        background-image:url(img/imagen-inicial5.jpg) ;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        padding-bottom: 20%;
+        padding-bottom:1%;
     }
 
     #root{
@@ -319,6 +499,140 @@ footer{
    }
   /*PAGINA TIPO FORMATO DESKTOP*/
 
+    #rootPokemonList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 20px;
+
+    }
+
+    .boxPokemon{
+        margin:40px 40px 40px 40px;
+        border-radius: 30px;
+        width: 240px;
+        height: 240px;
+        right: 50px;
+  
+    }
+
+    .titlePokemon{
+        font-family: Arial Narrow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.14em;  
+        color: #FFFDFD;
+
+    }
+  
+   .picturePokemon{
+        width: 170px;
+        height: 170px;
+        margin-top: 70px;/*Mover solo el mono*/
+    
+    }
+  
+   .transparentConteinerPokemon {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0,0.6);
+        border-radius: 30px;
+    }
+
+    .rootModalPokemon{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 20px;
+    }
+
+    .page {
+        display: flex;          
+        justify-content: center;
+        align-items: center;    
+    }
+    .transparentBackground{/*Fondo queda tenuemente oscuro mientras aparece modal*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+      
+
+    }
+    .modal{
+        background: radial-gradient(50% 50% at 50% 50%, #FD0707 2.6%, #EA2222 55.21%, #C91515 75%, #9F0606 99.48%);;
+        border-radius: 22px;
+        width: 430px;
+        height: 430px;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .modalClose{
+        background:rgba(0, 0, 0, 0.8);
+        position: absolute;
+        right: -20px;
+        color: crimson;
+        top: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .modalTitle {
+        font-family: Arial Narrow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.14em;
+        color: #FFFDFD;
+        position: absolute;
+        left: 24.34%;
+        right: 25.84%;
+        top: 1.82%;
+        bottom: 87.64%;
+    }
+
+    .modalInformation{            
+        padding: 10px 30px;
+    }
 
 
+    .botton{
+        border-radius: 30px;
+        margin-top: -80px;/*Mmedidas de tamaño del boton*/
+        width: 240px;
+        height: 240px;
+        right: 50px;
+        color: rgba(63, 63, 63, 1);  
+    }
+    .botton:hover{
+        background:  rgba(192, 190, 190, 0.3);
+        color: white;
+    }
+  
 }
