@@ -1,13 +1,13 @@
-# DATA
+# PROYECT DATA LOVERS
 
 ***
 
 ## Índice
 
-* [1. Resumen del proyecto](#1-RESUMEN-DEL-PROYECTO)
-* [2. PRESENTACIÓN](#2-PRESENTACIÓN)
-* [3. INVESTIGACIÓN UX](#3-INVESTIGACIÓN-UX)
-* [4. USUARIOS](#4-USUARIOS)
+* [1. Resumen del proyecto]
+* [2. PRESENTACIÓN]
+* [3. INVESTIGACIÓN UX]
+* [4. USUARIOS]
 
 ***
 
