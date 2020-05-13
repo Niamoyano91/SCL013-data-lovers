@@ -5,7 +5,7 @@ let data = pokemonData.pokemon;
 
 const rootFather = document.getElementById('rootFather');
 rootFather.innerHTML +=   `<section id="banner">
-<img class="inicialImg" src="./Img/imagen-inicial.jpg" alt="imagen pokemon primera generación">
+<img class="inicialImg" src="./Img/imagenInicial.jpg" alt="imagen pokemon primera generación">
 </section>
 <div id="root">
 <section id="text1InitialPage">
