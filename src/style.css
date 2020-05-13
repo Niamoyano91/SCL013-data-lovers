@@ -22,7 +22,7 @@ header{
     z-index: 100;
 }
 
-.contenedor{
+.container{
     width: 98%;
     margin: auto;
 }
@@ -56,10 +56,22 @@ input{
     height: 30px;
     width: 30px;
     position: absolute;
-    margin-top: -11px;
+    margin-top: -14px;
 }
+.icons2{
+    height: 33px;
+    width: 37px;
+    position: absolute;
+    margin-top: -14px;
+}
+
 p{
     margin-left: 50px;
+}
+
+.paragraph{
+    margin-left: 0px;
+
 }
 .weaknesses{
     display: none;
@@ -104,8 +116,6 @@ a:link{
 }
 li a {
     margin-top: 30px;
-
-
 }
 
 a{
@@ -162,8 +172,6 @@ a{
     background: linear-gradient(0deg, #EA2222, #EA2222);
 }
 
-
-
 .menu li:hover .submenu{
     visibility: visible;
     opacity: 1;
@@ -202,13 +210,16 @@ a{
     display: flex;
     flex-direction: column;  
     padding-bottom: 20%;
+  
 }
 
  #root{
      display: flex;
      flex-direction: column;
      padding-top: 10%;
-     padding-bottom: 10%;   
+     padding-bottom: 10%;  
+
+      
  }
 
 /*permite que la imagen se ajuste en la version movil*/
@@ -234,7 +245,6 @@ a{
 #text1InitialPage{
     margin:auto;
     margin-bottom: 10%;
-    text-align: center;
     width: 90%;
     height: 90%;
     background: #EA2222;
@@ -249,6 +259,7 @@ a{
     text-align: center;
     color: #FFF9F9;
     mix-blend-mode: normal;
+    justify-content: center;
 }
 
 #text2InitialPage{
@@ -271,7 +282,6 @@ a{
 }
 
 footer{
-
     margin:auto;
     margin-top: 10%;
     justify-content: center;
@@ -293,15 +303,14 @@ footer{
 
 
 
-#rootPokemon{
+
+#rootPokemonList{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
     margin-top: 20px;/*margen top de cuadrado semitransparente negro*/
-
   }
-
 
 
 
@@ -332,11 +341,11 @@ footer{
   .picturePokemon{
     width: 170px;
     height: 170px;
-    margin-top: -20px;/*Mover solo el mono*/
+    margin-top: 63px;/*Mover solo el mono*/
     
   }
   
-  .flip-conteiner {
+  .transparentConteinerPokemon  {
     text-align: center;
     width: 100%;
     height: 100%;
@@ -350,9 +359,17 @@ footer{
     justify-content: center;
     align-items: center;
 
+  }
+  .rootModalPokemon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    Justify-content:center;
+    margin-top: 20px;
+    }
     
-}
-.fondo_transparente{
+
+.transparentBackground{
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.226);
@@ -360,11 +377,79 @@ footer{
     height: 100vh;
     width: 100%;
     display: none;
+    flex-direction: column;
+
+}
+.modal{
+    background: radial-gradient(50% 50% at 50% 50%, #FD0707 2.6%, #EA2222 55.21%, #C91515 75%, #9F0606 99.48%);;
+    border-radius: 22px;
+    width: 330px;
+    height: 330px;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.modalClose{
+    background:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    right: -20px;
+    color: crimson;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modalTitle {
+    font-family: Arial Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+    color: #FFFDFD;
+    position: absolute;
+    left: 24.34%;
+    right: 25.84%;
+    top: 1.82%;
+    bottom: 87.64%;
+}
+
+.modalInformation{            
+    padding: 10px 30px;
 }
 
 
+.botton{
+    border-radius: 30px;
+    margin-top: -80px;/*Mmedidas de tamaño del boton*/
+    width: 240px;
+    height: 240px;
+    right: 50px;
+    color: rgba(63, 63, 63, 1);  
+}
+.botton:hover{
+    background:  rgba(192, 190, 190, 0.3);
+    color: white;
+}
+
+
+
  /*PAGINA INICIAL FORMATO DESKTOP*/
-@media (min-width: 1040px) {
+@media (min-width: 800px) {
     
     .menu{
         display: flex;
@@ -450,13 +535,14 @@ footer{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        padding-bottom:1%;
+        padding-bottom:1%;/*fue 1%*/
+        
     }
 
     #root{
         display: flex;
         flex-direction: row;
-        padding:13%;
+        padding:13%;/* fue 13%*/
     }
 
     
@@ -481,13 +567,13 @@ footer{
    }
   /*PAGINA TIPO FORMATO DESKTOP*/
 
+
     #rootPokemonList{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
         margin-top: 20px;
-
     }
 
     .boxPokemon{
@@ -496,7 +582,6 @@ footer{
         width: 240px;
         height: 240px;
         right: 50px;
-  
     }
 
     .titlePokemon{
@@ -555,7 +640,7 @@ footer{
     .modal{
         background: radial-gradient(50% 50% at 50% 50%, #FD0707 2.6%, #EA2222 55.21%, #C91515 75%, #9F0606 99.48%);;
         border-radius: 22px;
-        width: 430px;
+        width: 470px;
         height: 430px;
         top: 50%;
         left: 50%;
@@ -563,9 +648,10 @@ footer{
         transform: translate(-50%, -50%);
         position: absolute;
         display: flex;
-        flex-direction: column;
+        flex-direction:row-reverse;
         justify-content: space-evenly;
         align-items: center;
+        
     }
     .modalClose{
         background:rgba(0, 0, 0, 0.8);
@@ -582,25 +668,55 @@ footer{
         cursor: pointer;
     }
     .modalTitle {
+        position: fixed;
         font-family: Arial Narrow;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
         line-height: 41px;
-        display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.14em;
         color: #FFFDFD;
-        position: absolute;
-        left: 24.34%;
-        right: 25.84%;
-        top: 1.82%;
-        bottom: 87.64%;
+ 
     }
 
-    .modalInformation{            
+    .modalInformation{ 
+        margin-top: -100px;
+        margin-left: -280px;
+        flex-direction: column;          
         padding: 10px 30px;
+        font-family: Arial Narrow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        display: flex;
+        align-items: left;
+        position: fixed;
+        letter-spacing: 0.14em;
+        color: #FFF8F8;  
+    }
+
+
+    .modalBackground{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(250, 248, 248, 1);
+        border-radius: 30px;
+    }
+
+
+    .modalImagen{
+        position: fixed;
+        width: 170px;
+        height: 170px;
+        margin-top: -100px;
+        margin-right: 0px;
+       
+
+
     }
 
 

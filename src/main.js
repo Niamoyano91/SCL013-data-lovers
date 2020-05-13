@@ -9,17 +9,17 @@ rootFather.innerHTML +=   `<section id="banner">
 </section>
 <div id="root">
 <section id="text1InitialPage">
-  <p>Conoce en detalle a cada Pokémon de la Primera Generación.
+  <p class= "paragraph" >Conoce en detalle a cada Pokémon de la Primera Generación.
     Te mostraremos nuevas actualizaciones y mucho más!</p>
 </section>
 <section id="text2InitialPage">
-  <p>Únete a otros Entrenadores de todos los rincones que ya han descubierto muchos Pokémon explorando
+  <p class= "paragraph" >Únete a otros Entrenadores de todos los rincones que ya han descubierto muchos Pokémon explorando
     el mundo que les rodea.</p>
 </section>
 
 </div>
 <footer>
-<p>©2020 Niantic, Inc. ©2020 Pokémon. ©1995 - 2020 Nintendo / Creatures Inc. / GAME FREAK inc.</p>
+<p class= "paragraph">©2020 creator Nia Moyano/ Contacto niamoyano@gmail.com / Laboratoria 2020</p>
 </footer>`
 
 
@@ -56,10 +56,22 @@ const cards = (array) => {
             <span>x</span>
           </div>
           <div class="modalTitle">${array[i].name}</div>
+          <div class="modalBackground>
+          <div class=""><img class="modalImagen" alt="Imagen de Pokemon" src='${array[i].img}'>
           <div class="modalInformation">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nam? Minus nihil temporibus, minima
-              reprehenderit, rem explicabo earum nemo debitis, maxime deserunt quidem. Quia odit quae voluptate nobis sit
-              beatae!</p>
+          <p> Nº ${array[i].num}</p>
+          <p> Nº ${array[i].type}</p>
+          <p> Nº ${array[i].height}</p>
+          <p> Nº ${array[i].weight}</p>
+          <p> Nº ${array[i].egg}</p>
+          <p> Nº ${array[i].candy_count}</p>
+          <p> Nº ${array[i].spawn_chance}</p>
+          <p> Nº ${array[i].spawn_time}</p>
+          <p> Nº ${array[i].weaknesses}</p>
+
+          </div>
+          </div>
+
           </div>
     
         </div>
