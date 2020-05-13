@@ -1,20 +1,22 @@
+<<<<<<< HEAD
 # DATAPOKEMONnnnnnn
+=======
+# PROYECT DATA LOVERS
+>>>>>>> 20a0c591fc0aa6f50d3196d40f79e9854f63c24d
 
 ***
 
 ## Índice
 
-* [1. Resumen del proyecto](#1-RESUMEN-DEL-PROYECTO)
-* [2. PRESENTACIÓN](#2-PRESENTACIÓN)
-* [3. INVESTIGACIÓN UX](#3-INVESTIGACIÓN-UX)
-* [4. USUARIOS](#4-USUARIOS)
+* 1.Resumen Proyecto
+* 2.Presentación
+* 3.Investigación UX
+*4.Usuarios
 
 ***
 
 # RESUMEN DEL PROYECTO
-Este proyecto usa una base de datos de pokémon para que los usuarios de Pokémon GO puedan buscar información que les ayude a obtener pokémon con ciertas características o encontrar las fortalezas en los que ya tienen.
-
-*** 
+El proyecto consiste en la construcción de una pagina web que se adapte a diversos formatos de pantallas. El contenido esta basado en el juego Pokemón Go, esta pagina permitirá a lxs usuarixs poder identificar a los pokemones por su tipo, debilidad y ordenarlos alfabéticamente y por número.
 
 # PRESENTACIÓN 
 // IMG APARIENCIA FINAL
