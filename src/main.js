@@ -5,7 +5,7 @@ let data = pokemonData.pokemon;
 
 const rootFather = document.getElementById('rootFather');
 rootFather.innerHTML +=   `<section id="banner">
-<img class="inicialImg" src="./img/imagen-inicial.jpg" alt="imagen pokemon primera generación">
+<img class="inicialImg" src="./Img/imagen-inicial.jpg" alt="imagen pokemon primera generación">
 </section>
 <div id="root">
 <section id="text1InitialPage">
@@ -122,7 +122,7 @@ document.getElementById('types').addEventListener('change', () => {
       textOne.textContent = '';                                    //modifico el texto del contenedor que lo quiero vacio
       const textTwo = document.querySelector('#text2InitialPage');
       textTwo.textContent = '';
-      rootFather.setAttribute('style', 'background-image:url(./img/pasto.jpg)');
+      rootFather.setAttribute('style', 'background-image:url(./Img/pasto.jpg)');
       let array_type = [];
       switch (type_pokemon) {
         case 'Water':
@@ -205,7 +205,7 @@ document.getElementById('weaknessesPokemon').addEventListener('change', () => {
       textOne.textContent = '';                                    //modifico el texto del contenedor que lo quiero vacio
       const textTwo = document.querySelector('#text2InitialPage');
       textTwo.textContent = '';
-      rootFather.setAttribute('style', 'background-image:url(./img/pasto2.jpg)');
+      rootFather.setAttribute('style', 'background-image:url(./Img/pasto2.jpg)');
       let array_weaknesses = [];
       switch (pokemon_weakness) {
         case 'Water':
@@ -291,7 +291,7 @@ document.getElementById('orderPokemon').addEventListener('change', () => {
       textOne.textContent = '';                                    //modifico el texto del contenedor que lo quiero vacio
       const textTwo = document.querySelector('#text2InitialPage');
       textTwo.textContent = '';
-      rootFather.setAttribute('style', 'background-image:url(./img/pasto2.jpg)');
+      rootFather.setAttribute('style', 'background-image:url(./Img/pasto2.jpg)');
       let array_order = [];
       switch (pokemon_order) {
         case 'a_z':
