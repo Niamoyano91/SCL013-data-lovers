@@ -368,7 +368,7 @@ footer{
   }
 
   .page{
-    background: url(img/foto.jpg) center;
+    background: url(Img/foto.jpg) center;
     display: flex;          
     justify-content: center;
     align-items: center;
@@ -544,7 +544,7 @@ footer{
 
     #rootFather{
         display: flex;
-        background-image:url(img/imagen-inicial5.jpg) ;
+        background-image:url(Img/imagen-inicial5.jpg) ;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
