@@ -56,20 +56,17 @@ const cards = (array) => {
             <span>x</span>
           </div>
           <div class="modalTitle">${array[i].name}</div>
-          <div class="modalBackground>
           <div class=""><img class="modalImagen" alt="Imagen de Pokemon" src='${array[i].img}'>
           <div class="modalInformation">
-          <p> Nº ${array[i].num}</p>
-          <p> Nº ${array[i].type}</p>
-          <p> Nº ${array[i].height}</p>
-          <p> Nº ${array[i].weight}</p>
-          <p> Nº ${array[i].egg}</p>
-          <p> Nº ${array[i].candy_count}</p>
-          <p> Nº ${array[i].spawn_chance}</p>
-          <p> Nº ${array[i].spawn_time}</p>
-          <p> Nº ${array[i].weaknesses}</p>
-
-          </div>
+          <p> <img class="iconsModal"src="img/icono-tipoo.png">${array[i].type}</p>
+          <p> <img class="iconsModal"src="img/buscadorr.png">${array[i].num}</p>
+          <p> <img class="iconsModal"src="img/icono-alturaa.png">${array[i].height}</p>
+          <p> <img class="iconsModal"src="img/icono-pesoo.png">${array[i].weight}</p>
+          <p> <img class="iconsModal"src="img/icono-caramelo.png">${array[i].candy_count}</p>
+          <p> <img class="iconsModal"src="img/icono-brujulaa.png">${array[i].spawn_chance}</p>
+          <p> <img class="iconsModal"src="img/icono-reloj.png">${array[i].spawn_time}</p>
+          <p> <img class="iconsModal"src="img/icon-huevoo.png">${array[i].egg}</p>
+          <p> <img class="iconsModal"src="img/icono-peligroo.png">${array[i].weaknesses}</p>
           </div>
 
           </div>
