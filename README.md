@@ -36,7 +36,11 @@ El proyecto consiste en la construcción de una pagina web que se adapte a diver
  Link Figma: https://www.figma.com/file/iGVGS4lEmOceArwYGa4ZVf/Final-version?node-id=0%3A1
  ***
  ### PROTOTIPO EN ALTA FIELIDAD VERSIÓN PARA MÓVIL 
+<<<<<<< HEAD
  ![screen1](src/Img/prototipodealtaphone.png)
+=======
+![screen1](src/Img/prototipodealtaphone.png)
+>>>>>>> c150c19427a6b0d1ff29bb938303e8a66e16a472
  Link Figma: https://www.figma.com/file/w6lJ2xLFGXggd86zYh7VRd/Final-Phone?node-id=0%3A1
 
  ****
