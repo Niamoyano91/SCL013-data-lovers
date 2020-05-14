@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# DATAPOKEMONnnnnnn
-=======
+
 # PROYECT DATA LOVERS
->>>>>>> 20a0c591fc0aa6f50d3196d40f79e9854f63c24d
 
 ***
 
@@ -11,7 +8,8 @@
 * 1.Resumen Proyecto
 * 2.Presentación
 * 3.Investigación UX
-*4.Usuarios
+* 4.Usuarios
+
 
 ***
 
@@ -19,7 +17,7 @@
 El proyecto consiste en la construcción de una pagina web que se adapte a diversos formatos de pantallas. El contenido esta basado en el juego Pokemón Go, esta pagina permitirá a lxs usuarixs poder identificar a los pokemones por su tipo, debilidad y ordenarlos alfabéticamente y por número.
 
 # PRESENTACIÓN 
-// IMG APARIENCIA FINAL
+ ![screen1](src/Img/imagenproyecto.png)
 
 ***
 
@@ -28,25 +26,23 @@ El proyecto consiste en la construcción de una pagina web que se adapte a diver
  ## PROTOTIPOS 
  
  ### PROTOTIPO IDEA EN PAPEL Y LÁPIZ
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/papel1.jpeg)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/papel2.jpeg)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/papel3.jpeg)
+ ![Idea en papel](src/Img/proyectopapel.png)
+ ### PROTOTIPO DE BAJA FIDELIDAD
+ ![screen1](src/Img/prototipoenbajacalidad.png)
+ Link InVision: https://nia891374.invisionapp.com/freehand/pokemon-fducJV6wQ?v=Ow%2Be1YqDBIUICAi7%2BiSD2w%3D%3D&linkshare=urlcopied
  ***
- ### PROTOTIPO LINEAS
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/invision1.jpg)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/invision2.jpg)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/invision3.png)
+ ### PROTOTIPO EN ALTA FIDELIDAD VERSIÓN ESCRITORIO
+ ![screen1](src/Img/prototipodealtafigma.png)
+ Link Figma: https://www.figma.com/file/iGVGS4lEmOceArwYGa4ZVf/Final-version?node-id=0%3A1
  ***
- ### PROTOTIPO EN ALTA VERSIÓN ESCRITORIO
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/Escritorio1.png)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/escritorio2.png)
- ***
- ### PROTOTIPO EN ALTA VERSIÓN PARA MÓVIL
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/Celular1.png)
- ![screen1](https://github.com/vvaldivi/SCL013-data-lovers/blob/master/img%20readme/Celular2.png)
+ ### PROTOTIPO EN ALTA FIELIDAD VERSIÓN PARA MÓVIL 
+ ![screen1](src/Img/prototipodealtaphone.png)
+ Link Figma: https://www.figma.com/file/w6lJ2xLFGXggd86zYh7VRd/Final-Phone?node-id=0%3A1
+
  ****
  ### TESTEO EN USUARIOS
-Se realizó un testeo con usuarios entre 10 a 30 años, quienes nos indicaron que los colores siguen la identidad gráfica de Pokémon, que es agradable e intuitiva. Como sugerencia nos indicaron cambiar la simbología de la ficha del pokémon o que al pasar el cursor explique que son los símbolos ya que pueden ser poco claros.
+
+Se realizó testeo con usuarios entre 10 a 30 años, quienes indican que los colores siguen la identidad gráfica de Pokémon, que es agradable e intuitiva. Como sugerencia nos indicaron cambiar la simbología de la ficha del pokémon o que al pasar el cursor explique que son los símbolos ya que pueden ser poco claros.
  
 ***
 
