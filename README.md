@@ -104,3 +104,7 @@ Se realizó testeo con usuarios entre 10 a 30 años, quienes indican que los col
    - Se mostraran tips en el "home" para que el usuario pueda conocer mas sobre los pokémons y así podamos guiar un poco sus búsquedas, se crea una barra lateral con tips, que al ser presionados se despliega la información con ejemplos e imágenes.
   
 ***
+
+Deploy: https://niamoyano91.github.io/SCL013-data-lovers/ 
+
+Git-hub:https://github.com/Niamoyano91/SCL013-data-lovers 
