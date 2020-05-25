@@ -36,19 +36,7 @@ input{
     margin-right: 30px;
 }
  
-#menu-bar{
-    display: none;
-}
-#inicio{
-    display: none;
-}
-#tipo{
-    display: none;
-}
-#debilidad{
-    display: none;
-}
-.type{
+#menu-bar, #inicio, #tipo, #debilidad, .type, .weaknesses, .order{
     display: none;
 }
 
@@ -72,12 +60,6 @@ p{
 .paragraph{
     margin-left: 0px;
 
-}
-.weaknesses{
-    display: none;
-}
-.order{
-    display: none;
 }
 
 header label{
@@ -106,12 +88,8 @@ header.container{
 
 .icon{
     height: 30px;
-    width: 30px;
-  
+    width: 30px; 
 }
-
-
-
 
 a:link{
     text-decoration:none;
@@ -134,7 +112,7 @@ a{
     border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
-.submenu{
+.submenu, .submenu2, .submenu3 {
     margin-left: -18px;
     position: absolute;
     visibility: hidden;
@@ -142,49 +120,14 @@ a{
     opacity: 0;
     transition: opacity 1.05s;
 }
-.submenu2{
-    margin-left: -18px;
-    position: absolute;
-    visibility: hidden;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1.05s;
 
-}
-.submenu3{
-    margin-left: -18px;
-    position: absolute;
-    visibility: hidden;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1.05s;
-}
-.submenu li{
-    display: block;
-    padding: 5px;
-    background: linear-gradient(0deg, #EA2222, #EA2222);
-}
-.submenu2 li{
-    display: block;
-    padding: 5px;
-    background: linear-gradient(0deg, #EA2222, #EA2222);
-}
-.submenu3 li{
+.submenu li, .submenu2 li, .submenu3 li{
     display: block;
     padding: 5px;
     background: linear-gradient(0deg, #EA2222, #EA2222);
 }
 
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu li:hover .submenu2{
-    visibility: visible;
-    opacity: 1;
-}
-.menu li:hover .submenu3{
+.menu li:hover .submenu, .menu li:hover .submenu2, .menu li:hover .submenu3 {
     visibility: visible;
     opacity: 1;
 }
@@ -204,7 +147,6 @@ a{
 
 }
 
- 
  #banner{
      margin-top:50px;  
  }
@@ -216,9 +158,7 @@ a{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-bottom:1%;/*fue 1%*/ 
-    padding-bottom: 20%;
-  
+    /*padding-bottom:;fue 1%*/  
 }
 
  #root{
@@ -232,23 +172,13 @@ a{
 
 /*permite que la imagen se ajuste en la version movil*/
 .inicialImg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 29%;
+    background-image: url("./Img/imagenInicial.jpg");
     margin-top: -15px;
-    width: 100%;
-    height: 100%; 
+    display: block;
 }
-
-/*#banner img{
-    width: 100%;
-    height: 100%;
-    order: 1;
-}
-/*
-#banner.contenedor{
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%);
-}*/
-
 
 #text1InitialPage{
     margin:auto;
@@ -309,15 +239,17 @@ footer{
     
 /*PAGINA TIPO FORMATO PHONE*/
 
+
+
 .iconsModal{
     height: 30px;
     width: 30px;
     margin-top: 3px;
     margin-left: 0px;
     margin-right: 5px;
-    margin-bottom: -3px;
-
+    margin-bottom: -3px;s
 }
+
 
 
 #rootPokemonList{
@@ -327,8 +259,7 @@ footer{
     justify-content:center;
     margin-top: 20px;/*margen top de cuadrado semitransparente negro*/
   }
-
-
+  
 
   .boxPokemon{ /* propiedades de porte y margen de caja negra semitransparente*/
     margin:40px 40px 40px 40px;
@@ -336,7 +267,6 @@ footer{
     width: 240px;
     height: 240px;
     right: 50px;
-  
   }
 
   .titlePokemon{
@@ -488,6 +418,7 @@ footer{
 
 
 
+
  /*PAGINA INICIAL FORMATO DESKTOP*/
 @media (min-width: 880px) {
     
@@ -512,7 +443,7 @@ footer{
         background: rgba(63, 63, 63, 1) ;
 
     }
-    .submenu{
+    .submenu,  .submenu2, .submenu3{
         margin-top: 18px;
         margin-left: -18px;
         position: absolute;
@@ -522,51 +453,16 @@ footer{
         transition: opacity 1.05s;
         
     }
-
-    .submenu2{
-        margin-top: 18px;
-        margin-left: -18px;
-        position: absolute;
-        visibility: hidden;
-        width: 30%;
-        opacity: 0;
-        transition: opacity 1.05s;
-        
-    }
-    .submenu3{
-        margin-top: 18px;
-        margin-left: -18px;
-        position: absolute;
-        visibility: hidden;
-        width: 30%;
-        opacity: 0;
-        transition: opacity 1.05s;
-        
-    }
-    .submenu3 li{
+    .submenu3 li, .submenu2 li, .submenu li{
         display: block;
         padding: 10px;
         background: linear-gradient(0deg, #EA2222, #EA2222);
     }
 
-    .submenu2 li{
-        display: block;
-        padding: 10px;
-        background: linear-gradient(0deg, #EA2222, #EA2222);
-    }
-    .submenu li{
-        display: block;
-        padding: 10px;
-        background: linear-gradient(0deg, #EA2222, #EA2222);
-
-    }
-    #banner{
+    #banner, .inicialImg{
         display:none;
     }
 
-    .inicialImg{
-        display: none;
-    }
 
     #rootFather{
         display: flex;

@@ -1,11 +1,28 @@
 import pokemonData from './data/pokemon/pokemon.js';
-import { filterType, filterWeakness, orderAlphabetically1, orderAlphabetically2, orderNumber1, orderNumber2 } from './data.js';
+import { filterType, filterWeakness, orderAlphabetically1, orderAlphabetically2, orderNumber1, orderNumber2,search } from './data.js';
 
 let data = pokemonData.pokemon;
 
+const input= document.querySelector('input');//constante que guarda el selector input 
+input.addEventListener('input', searchPokemon);//escucho en el input ()
+
+
+//funcion que busca pokemones y los muestra en pantalla//
+function searchPokemon(e) {
+const textOne = document.querySelector('#text1InitialPage'); // creo una variable para seleccionar el id            
+textOne.textContent = '';                                    //modifico el texto del contenedor que lo quiero vacio
+const textTwo = document.querySelector('#text2InitialPage');
+textTwo.textContent = '';
+rootFather.setAttribute('style', 'background-image:url(./Img/pasto.jpg)');
+let array_search = [];
+  array_search= search(data , e.target.value.toLowerCase()); //e.target.value es el string ingresado en la barra buscador                             /*console.log(log.textContent);*///compruebo que traigo a js lo que ingreso en html
+  cards(array_search);
+}
+
+//pantalla inicial//
 const rootFather = document.getElementById('rootFather');
 rootFather.innerHTML +=   `<section id="banner">
-<img class="inicialImg" src="./Img/imagenInicial.jpg" alt="imagen pokemon primera generación">
+<div class="inicialImg"></div>
 </section>
 <div id="root">
 <section id="text1InitialPage">
@@ -24,7 +41,7 @@ rootFather.innerHTML +=   `<section id="banner">
 
 
 
-
+//constante que muestra las cartas de cada pokemon y modal//
 const cards = (array) => {
   const listPokemons = document.getElementById('rootPokemonList');
   let listAllPokemon = '';
@@ -86,7 +103,7 @@ const cards = (array) => {
 
 
 
-
+//constante que muestra las cartas de cada pokemon mas su numero//
 const cards2 = (array) => {
   const listPokemons = document.getElementById('rootPokemonList');
   let listAllPokemonType = '';
@@ -113,6 +130,8 @@ const cards2 = (array) => {
 };
 
 
+
+//bloque que define que tipo de pokemon se buscara segun el checkbox selecionado//
 let type = document.getElementsByClassName('type');//recorre los checkbox
 document.getElementById('types').addEventListener('change', () => {
   for (let i = 0; i < type.length; i++) {
@@ -195,7 +214,9 @@ document.getElementById('types').addEventListener('change', () => {
     }
   }
 });
+ 
 
+//bloque que define que debilidad de pokemon se buscara segun el checkbox selecionado//
 let weakness = document.getElementsByClassName('weaknesses');//recorre los checkbox
 document.getElementById('weaknessesPokemon').addEventListener('change', () => {
   for (let i = 0; i < weakness.length; i++) {
@@ -281,7 +302,7 @@ document.getElementById('weaknessesPokemon').addEventListener('change', () => {
 
 
 
-
+//bloque que define que orden de pokemones se mostrara segun el checkbox selecionado//
 let order = document.getElementsByClassName('order');//recorre los checkbox
 document.getElementById('orderPokemon').addEventListener('change', () => {
   for (let i = 0; i < order.length; i++) {
